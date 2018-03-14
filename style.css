@@ -242,6 +242,8 @@ h2 span {
 .portfolio img {
   cursor: pointer;
   padding: 5px;
+  height: auto;
+  min-width: 200px;
   box-shadow: 2px 3px 5px rgba(104,104,104,0.8);
 }
 
@@ -278,6 +280,8 @@ h2 span {
 .team img {
   cursor: pointer;
   box-shadow: 5px 8px 10px rgba(104,104,104,0.8);
+  height: auto;
+  min-width: 200px;
 }
 
 
@@ -639,7 +643,7 @@ h2 span {
 .section-list {
   margin: 0 auto; 
   flex-direction: column;
-  padding: 0 180px;
+  /* padding: 0 180px; */
   text-align: center;
 }
 
@@ -697,5 +701,30 @@ form h3 {
     order: 0;
   }
 
+  .team {
+    padding: 20px 0;
+    text-align: center;
+  }
+
  
+}
+
+@media (max-width: 300px) {
+  .team img {
+    width: 200px;
+  }
+
+
+  .portfolio img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .section-list {
+    padding: 0;
+  }
+  .section-list li { 
+    margin: 0; 
+    padding: 10px 25px;
+  }
 }
